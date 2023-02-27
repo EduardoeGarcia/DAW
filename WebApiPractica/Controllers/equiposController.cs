@@ -121,7 +121,7 @@ namespace WebApiPractica.Controllers
             _equiposContexto.equipos.Remove(equipo);
             _equiposContexto.SaveChanges();
 
-            return Ok(equipo);
+            return Ok(equipo); 
         }
     }
 }
