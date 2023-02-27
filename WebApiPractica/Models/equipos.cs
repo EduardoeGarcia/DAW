@@ -17,5 +17,9 @@ namespace WebApiPractica.Models
         public int? estado_equipo_id { get; set; }
         public string estado { get; set; }
 
+        public static implicit operator equipos(equipos v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
