@@ -25,7 +25,7 @@ namespace WebApiPractica.Controllers
                                            select e).ToList();
 
             if(listadoEquipo.Count() = 0)
-            {
+            { 
                 return NotFound();
             }
 
