@@ -16,6 +16,7 @@ namespace WebApiPractica.Controllers
             _equiposContexto = equiposContexto;
         }
 
+        //primer método todos los registros de una tabla, sin parámetros de filtros 
         [HttpGet]
         [Route("GetAll")]
 
@@ -32,6 +33,7 @@ namespace WebApiPractica.Controllers
             return Ok(listadoEquipo);
         }
 
+        //segundo método filtraremos una tabla con su ID, para ello tenemos que pasar por parámetros el ID que deseamos buscar
         [HttpGet]
         [Route("GetById/{Id}")]
         public IActionResult Get(int id)
@@ -47,6 +49,7 @@ namespace WebApiPractica.Controllers
             return Ok(equipo);
         }
 
+        //tercer método de búsqueda será filtrando la tabla por un campo string, en este caso por descripción. 
         [HttpGet]
         [Route("Find/{filtro}")]
 
@@ -63,6 +66,7 @@ namespace WebApiPractica.Controllers
             return Ok(equipo);
         }
 
+        //cuarto método de guardar un registro en la base de datos
         [HttpPost]
         [Route("Add")]
 
@@ -80,6 +84,7 @@ namespace WebApiPractica.Controllers
             }
         }
 
+        //quinto método  actualizar un registro
         [HttpPut]
         [Route("actualizar/{id}")]
 
@@ -105,6 +110,7 @@ namespace WebApiPractica.Controllers
             return Ok(equipoModificar);
         }
 
+        //sexto método eliminar un registro
         [HttpDelete]
         [Route("eliminar/{id}")]
 
