@@ -84,7 +84,7 @@ namespace WebApiPractica.Controllers
             }
         }
 
-        //quinto método  actualizar un registro
+        //quinto método de modificar y actualizar un registro
         [HttpPut]
         [Route("actualizar/{id}")]
 
