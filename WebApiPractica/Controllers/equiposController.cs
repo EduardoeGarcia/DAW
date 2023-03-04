@@ -35,7 +35,7 @@ namespace WebApiPractica.Controllers
 
         //segundo método filtraremos una tabla con su ID, para ello tenemos que pasar por parámetros el ID que deseamos buscar
         [HttpGet]
-        [Route("GetById/{Id}")]
+        [Route("GetById/{id}")]
         public IActionResult Get(int id)
         {
             equipos? equipo = (from e in _equiposContexto.equipos
