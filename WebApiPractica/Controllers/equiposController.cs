@@ -33,7 +33,7 @@ namespace WebApiPractica.Controllers
         }
 
         [HttpGet]
-        [Route("GetById/{Id]")]
+        [Route("GetById/{Id}")]
         public IActionResult Get(int id)
         {
             equipos? equipo = (from e in _equiposContexto.equipos
@@ -81,7 +81,7 @@ namespace WebApiPractica.Controllers
         }
 
         [HttpPut]
-        [Route("actualizar/{id]")]
+        [Route("actualizar/{id}")]
 
         public IActionResult ActualizarEquipo(int id, [FromBody] equipos equipoModificar)
         {
